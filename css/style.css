@@ -76,9 +76,7 @@ body {
 }
 .g_form a:last-child {
   margin-right: 0;
-}
-.g_form iframe {
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .guild {
