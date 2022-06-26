@@ -84,10 +84,10 @@ body {
   justify-content: space-around;
   margin-top: 20px;
 }
-.guild button {
+.guild a {
   margin-right: 10px;
 }
-.guild button:last-child {
+.guild a:last-child {
   margin-right: 0;
 }
 
