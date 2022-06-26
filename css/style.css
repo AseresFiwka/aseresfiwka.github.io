@@ -71,13 +71,12 @@ body {
 .g_form {
   margin-top: 120px;
 }
-.g_form a {
+.g_form button {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.g_form a:last-child {
-  margin-right: 0;
-  margin-bottom: 20px;
+.g_form iframe {
+  margin-top: 10px;
 }
 
 .guild {
@@ -85,10 +84,10 @@ body {
   justify-content: space-around;
   margin-top: 20px;
 }
-.guild a {
+.guild button {
   margin-right: 10px;
 }
-.guild a:last-child {
+.guild button:last-child {
   margin-right: 0;
 }
 
