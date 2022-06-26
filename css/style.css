@@ -73,6 +73,7 @@ body {
 }
 .g_form a {
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .g_form a:last-child {
   margin-right: 0;
