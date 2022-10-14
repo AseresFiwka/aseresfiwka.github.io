@@ -6,3 +6,7 @@ ScrollSmoother.create({
 	wrapper: '.wrapper',
 	content: '.content'
 })
+
+window.onload=function() {
+  document.getElementById('loading-mask').style.display='none';
+}

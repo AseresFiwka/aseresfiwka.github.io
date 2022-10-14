@@ -57,6 +57,19 @@ body {
 }
 
 /* Главная */
+#loading-mask {
+  background-color: #070217;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
 .main-header {
   position: relative;
   min-height: 100vh;
