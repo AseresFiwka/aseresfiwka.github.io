@@ -8,7 +8,7 @@
 :root {
   --index: calc(1vw + 1vh);
   --text: #e7e7e0;
-  --transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+  --transition: transform 2.75s cubic-bezier(.075, .5, 0, 1);
 }
 
 p {
@@ -59,14 +59,14 @@ body {
 /* Главная */
 .main-header {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: auto;
-  background-image: url("../img/gif.gif");
+  margin-bottom: 50%;
+  background-image: url("../img/gifwhitebluelow.gif");
   background-size: 100% 100vh;
-  will-change: transform;
 }
 
 .main-header::after {
@@ -74,12 +74,12 @@ body {
   position: absolute;
   z-index: 100;
   width: 100%;
-  height: calc(var(--index) * 10);
-  background-image: url();
+  height: calc(var(--index) * 50);
+  background-image: url("../img/switchlayer.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  bottom: calc(var(--index) * -4.5);
+  bottom: calc(var(--index) * -40);
 }
 
 .layers {
@@ -101,31 +101,28 @@ body {
   will-change: transform;
   z-index: 2;
   transition: var(--transition);
-  opacity: 70%;
 }
 
 .layers__base {
   transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
   z-index: 0;
+  opacity: 85%;
 }
 
 .layers__middle {
   transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+  opacity: 40%;
 }
 
 .layers__front {
-  transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+  transform: translate3d(0, calc(var(--scrollTop) / 3.7), 0);
+  opacity: 80%;
 }
 
 .layer__header {
   z-index: 1;
   transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
   transition: var(--transition);
-  will-change: transform;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: var(--text);
-  text-shadow: 0 0 15px #9d822b;
 }
 
 .layers__title {
@@ -140,22 +137,22 @@ body {
 }
 
 .main-article {
-  --main-article-transform: translate3d(0, calc(var(--scrollTop) / -7.5), 0);
+  --main-article-transform: translate3d(0, calc(var(--scrollTop) / -5.9), 0);
   min-height: 100vh;
   background-size: cover;
   background-position: center;
-  color: var(--text);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   text-align: center;
   /* Update: */
-  top: -1px;
+  top: 1px;
   z-index: 10;
 }
 
 .main-article__header {
+  margin-top: calc(var(--index) * 19);
   text-transform: uppercase;
   font-size: calc(var(--index) * 1.8);
   letter-spacing: calc(var(--index) / 7.5);
@@ -165,7 +162,7 @@ body {
 }
 
 .main-article__paragraph {
-  max-width: calc(var(--index) * 30);
+  max-width: calc(var(--index) * 40);
   font-size: calc(var(--index) * 0.9);
   margin-top: calc(var(--index) / 1.25);
   transform: var(--main-article-transform);
