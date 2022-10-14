@@ -146,6 +146,7 @@ body {
   align-items: center;
   position: relative;
   text-align: center;
+  text-shadow: 0 0 5px #000000;
   /* Update: */
   top: 1px;
   z-index: 10;
@@ -168,6 +169,7 @@ body {
   transform: var(--main-article-transform);
   transition: var(--transition);
   will-change: transform;
+  font-weight: 600;
 }
 
 .logo_txt {
