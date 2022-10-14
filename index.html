@@ -17,6 +17,7 @@
 
 
 <body>
+
 	<div class="wrapper">
 		<div class="content">
 
@@ -100,7 +101,21 @@
 
 
 
+        <script type="text/javascript">
 
+
+          function init() {
+          // выходим, если функция уже выполнялась
+          if (arguments.callee.done) return;
+
+          // устанавливаем флаг, чтобы функция не исполнялась дважды
+          arguments.callee.done = true;
+
+          $('.main').show();
+          };
+
+          window.onload = init;
+          </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
