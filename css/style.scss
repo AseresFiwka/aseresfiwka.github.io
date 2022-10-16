@@ -78,7 +78,6 @@ background:rgb(4, 0, 17);
 
 
 
-
 /* Главная */
 
 #loading-mask {
@@ -93,7 +92,11 @@ flex-direction: column;
   top: 0;
   width: 100%;
   z-index: 9999;
-
+  opacity: 1;
+  -webkit-transition: opacity 600ms;
+  -moz-transition: opacity 600ms;
+  -ms-transition: opacity 600ms;
+  transition: opacity 600ms;
 }
 #connecting {
   mix-blend-mode: lighten;
