@@ -20,7 +20,7 @@
 <body>
 
 
- <div id="loading-mask"><img src="img/loadgoose.gif" onload="banner()" alt=""><img src="img/Pbzw.gif" id="connecting" alt=""></div>
+ <div id="loading-mask" ><img src="img/loadgoose.gif" onload="banner()" alt=""><img src="img/Pbzw.gif" id="connecting" alt=""></div>
 <div id="page">
  <div class="wrapper">
 		<div class="content">
@@ -66,7 +66,7 @@
 
     <header class="main-header">
       <div class="layers">
-    <img class="logo_txt" src="img/text_silent.png" alt="txt_silent" />
+    <img class="logo_txt" src="img/text_silent.png" onload="press_f()" alt="txt_silent" />
 
     <div class="layer layers__base" style="background-image: url(img/base.png);"></div>
     <div class="layer layers__middle" style="background-image: url(img/mid.png);"></div>
@@ -97,12 +97,10 @@
     </article>
 
 
-      <p>
-        </p>
-
       </div></div></div></div>
 
 
+<img src="img/press_f.webp" alt="reload_page"    id="press_f" href="#" onclick="location.reload(); return false;">
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -113,6 +111,13 @@
   document.getElementById('page').style.display='inline-block';
 
 }
+  function press_f() {
+    document.getElementById('press_f').style.display='none';
+}
+
+
+
+
 </script>
 
 </body>

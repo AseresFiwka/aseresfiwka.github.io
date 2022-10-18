@@ -81,6 +81,15 @@ background:rgb(4, 0, 17);
 }
 
 
+#press_f {
+  display:block;
+  margin:auto;
+mix-blend-mode: screen;
+filter: invert(100%);
+cursor: pointer;
+min-width: 100px;
+
+}
 
 
 /* Главная */

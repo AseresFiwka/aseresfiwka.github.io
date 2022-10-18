@@ -17,11 +17,29 @@ function display_none() {
 window.onload=function() {
   setTimeout(opacity_none, 1700);
   setTimeout(display_none, 2700);
+
 }
 
+function keyPress(e) {
+  let keyNum;
+  if (window.event) {
+      keyNum = window.event.keyCode;
+  }
+  else if (e) {
+      keyNum = e.which;
+  }
+  console.log(keyNum);
+}
+document.onkeydown = keyPress;
+document.onkeydown = function (e) {
+  switch (e.keyCode) {
+      case 70:
+        location.reload()
 
-
-
+      default:
+          console.log(e.keyCode);
+  }
+}
 
 
 
