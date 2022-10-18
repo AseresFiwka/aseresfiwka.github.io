@@ -7,13 +7,16 @@ ScrollSmoother.create({
 	content: '.content'
 })
 
+function opacity_none() {
+  document.getElementById('loading-mask').style.opacity='0';
+}
 function display_none() {
   document.getElementById('loading-mask').style.display='none';
 }
 
 window.onload=function() {
-  document.getElementById('loading-mask').style.opacity='0';
-  setTimeout(display_none, 700);
+  setTimeout(opacity_none, 1700);
+  setTimeout(display_none, 2700);
 }
 
 
