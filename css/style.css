@@ -51,9 +51,14 @@ body {
   padding-top: 100px;
 }
 
+#page {
+  display: none;
+}
+
 .content {
   display: inline-block;
   width: 100%;
+  will-change: transform;
 }
 
 /* Главная */
@@ -199,10 +204,6 @@ body {
 
 .logo_svg {
   height: 50px;
-}
-
-.content {
-  will-change: transform;
 }
 
 .copy {

@@ -70,15 +70,21 @@ background:rgb(4, 0, 17);
   padding-top: 100px;
 }
 
+#page {
+  display: none;
+}
 
 .content {
   display: inline-block;
   width: 100%;
+  will-change: transform;
 }
 
 
 
+
 /* Главная */
+
 
 #loading-mask {
   background-color: #070217;
@@ -232,10 +238,6 @@ width: 100%;
 }
 
 
-
-.content {
-  will-change: transform;
-}
 
 
 
