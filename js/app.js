@@ -16,13 +16,7 @@ window.onload=function() {
   setTimeout(display_none, 700);
 }
 
-function banner() {
-  document.getElementById('wrapper').style.display='inline-block';
 
-}
- body.onload=function(){
-  setTimeout(banner, 700);
- }
 
 
 
