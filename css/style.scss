@@ -52,6 +52,7 @@ body {
 
 .navbar {
   position: fixed;
+
   width: 100%;
   z-index: 1000;
 }
@@ -94,6 +95,7 @@ min-width: 100px;
 /* Главная */
 
 
+
 #loading-mask {
   background-color: #070217;
   display: flex;
@@ -121,6 +123,7 @@ flex-direction: column;
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
+
 
 .main-header {
 	position: relative;
